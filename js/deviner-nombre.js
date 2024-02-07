@@ -19,10 +19,10 @@ function tireNombre(min, max) {
 }
 
 // Initialisation des variables
-let nbMystere = 0; // Le nombre mystère à deviner
-let nbEssais = 0; // Le nombre d'essais effectués par l'utilisateur
-let reponse = null; // La réponse de l'utilisateur
-let message = 'Entrez un nombre entre 1 et 100'; // Message initial demandant à l'utilisateur d'entrer un nombre
+let nbMystere = 0;
+let nbEssais = 0;
+let reponse = null;
+let message = 'Entrez un nombre entre 1 et 100';
 
 // Génération du nombre mystère entre 1 et 100
 nbMystere = tireNombre(1, 100);
