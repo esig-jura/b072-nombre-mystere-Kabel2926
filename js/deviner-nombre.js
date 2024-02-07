@@ -30,7 +30,7 @@ nbMystere = tireNombre(1, 100);
 // Boucle principale du jeu
 do {
     // Demande à l'utilisateur d'entrer un nombre via une boîte de dialogue
-    reponse = prompt(message);
+    reponse = parseInt(prompt(message));
     // Incrémente le nombre d'essais
     nbEssais++;
 
@@ -46,15 +46,12 @@ do {
         // Met à jour le message pour indiquer à l'utilisateur de choisir un nombre plus petit
         message = 'C\'est moins !';
     }
-    // Si la réponse de l'utilisateur est égale au nombre mystère
-    else {
-        // Affiche un message de félicitations avec le nombre d'essais effectués
-        alert(`Vous avez trouvé après ${nbEssais} essai(s).`);
-
-    }
 }
 // La boucle continue tant que la réponse de l'utilisateur n'est pas égale au nombre mystère
 while (nbMystere !== reponse);
+
+// Affiche un message de félicitations avec le nombre d'essais effectués
+alert(`Vous avez trouvé après ${nbEssais} essai(s).`);
 
 
 
