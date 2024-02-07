@@ -17,4 +17,11 @@ function tireNombre(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-alert(tireNombre(50,150));
+//alert(tireNombre(50,150));
+
+let nbMystere =0;
+let nbEssais = 0;
+let reponse = null;
+let message = "";
+
+
